@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NumberProgressActivity">
+    <com.yxf.customviewutils.widget.NumberProgressBar
+        android:id="@+id/number_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress_max="100"
+        app:progress_reach_color="@color/colorAccent"
+        app:progress_unreach_color="@android:color/darker_gray"
+        app:progress_reach_height="5dp"
+        app:progress_unreach_height="5dp"
+        app:progress_text_color="#333333"
+        app:progress_text_size="14sp"
+        app:progress_text_visibility="Visible"
+        android:background="@drawable/bg"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="start"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_progress_bar"
+        />
+
+</android.support.constraint.ConstraintLayout>
