@@ -27,4 +27,5 @@
             <enum name="Gone" value="2" />
         </attr>
     </declare-styleable>
+
 </resources>
